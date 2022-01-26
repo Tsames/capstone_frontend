@@ -1,1 +1,10 @@
-<p>{{event.title}}</p>
+<div>
+  <h3>{{event.title}}</h3>
+  <h6>{{event.location}}</h6>
+  <h6>{{event.range_begin}} and {{event.range_end}}</h6>
+  <p>{{event.description}}</p>
+  <div>
+    <button><a [routerLink]="'/edit/' + event.id">Edit</a></button>
+    <button (click)="evtService.DeleteEvent(event)">Delete</button>
+  </div>
+</div>
