@@ -1,10 +1,20 @@
 <div>
   <h3>{{event.title}}</h3>
   <h6>{{event.location}}</h6>
-  <h6>{{event.range_begin}} and {{event.range_end}}</h6>
+  <h6 *ngIf="event.range_begin && event.range_end">{{event.range_begin}} to {{event.range_end}}</h6>
   <p>{{event.description}}</p>
   <div>
     <button class="btn"><a [routerLink]="'/edit/' + event.id">Edit</a></button>
-    <button class="btn" (click)="evtService.DeleteEvent(event)">Delete</button>
+    <button class="btn" (click)="deleteEvent()">Delete</button>
   </div>
+</div>
+
+<div id="modalCheck" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Are you sure you want to delete this event?</p>
+  </div>
+
 </div>

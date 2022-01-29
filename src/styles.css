@@ -5,21 +5,23 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   body {
-    background-color: red;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp3260212.jpg&f=1&nofb=1");
+    background-size: cover;
   }
 
   div.main {
-    background-color: orange;
+    border-radius: 1em;
+    border-width: 0.2em;
+    padding: 1em;
     position: fixed;
     top: 20%;
-    bottom: 15%;
-    left: 15%;
-    right: 15%;
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
   }
 
   nav#navbar {
     height: 5em;
-    background-color: green;
   }
 
   a.navbar-item{
@@ -37,21 +39,28 @@
   div.footer {
     position: fixed;
     bottom: 0%;
-    height: 4em;
-    background-color: blue;
+    height: 1.5em;
     width: 100%;
+  }
+
+  a.footer-item { 
+    font-size: 14px;
   }
 
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-body {
-    background-color: orange;
+  body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F9%2F49%2FbEYDSp.jpg&f=1&nofb=1");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   div.main {
-    background-color: red;
+    border-radius: 1em;
+    border-width: 0.18em;    
+    padding: 1em;
     position: fixed;
     top: 25%;
     bottom: 15%;
@@ -61,7 +70,6 @@ body {
 
   nav#navbar {
     height: 5em;
-    background-color: green;
   }
 
   a.navbar-item{
@@ -69,30 +77,36 @@ body {
   }
 
   a#navIconHome{
-    margin-left: 2em;
+    margin-left: 5em;
   }
 
   a#navIconCreate {
-    margin-right: 2em
+    margin-right: 5em
   }
 
   div.footer {
     position: fixed;
     bottom: 0%;
-    height: 4em;
-    background-color: blue;
+    height: 2em;
     width: 100%;
+  }
+
+  a.footer-item { 
+    font-size: 14px;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-body {
-    background-color: yellow;
+  body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.wallpaperbetter.com%2Fwallpaper%2F1009%2F576%2F998%2Fgrass-water-drop-macro-hd-1080P-wallpaper.jpg&f=1&nofb=1");
+    background-size: cover;
   }
 
   div.main {
-    background-color: red;
+    border-radius: 1em;
+    border-width: 0.25em;
+    padding: 1em;
     position: fixed;
     top: 25%;
     bottom: 15%;
@@ -102,7 +116,6 @@ body {
 
   nav#navbar {
     height: 5em;
-    background-color: green;
   }
 
   a.navbar-item{
@@ -121,19 +134,21 @@ body {
     position: fixed;
     bottom: 0%;
     height: 2em;
-    background-color: blue;
     width: 100%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-body {
-    background-color: green;
+  body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F9%2F49%2FbEYDSp.jpg&f=1&nofb=1");
+    background-size: repeat;
   }
 
   div.main {
-    background-color: red;
+    border-radius: 1em;
+    border-width: 0.25em;
+    padding: 1em;
     position: fixed;
     top: 20%;
     bottom: 20%;
@@ -143,7 +158,6 @@ body {
 
   nav#navbar {
     height: 5em;
-    background-color: orange;
   }
 
   a.navbar-item{
@@ -162,19 +176,21 @@ body {
     position: fixed;
     bottom: 0%;
     height: 2em;
-    background-color: blue;
     width: 100%;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-body {
-    background-color: blue;
+  body {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-71nk_hZ7SOs%2FUa-Fq-cbszI%2FAAAAAAAALxg%2F8KiVcE0u3ko%2Fs1600%2Fscenery-collection-hd-wallpaper_1920x1080_89938.jpg&f=1&nofb=1");
+    background-size: repeat;
   }
 
   div.main {
-    background-color: red;
+    border-radius: 1em;
+    border-width: 0.5em;
+    padding: 1em;
     position: fixed;
     top: 20%;
     bottom: 20%;
@@ -184,7 +200,6 @@ body {
 
   nav#navbar {
     height: 6em;
-    background-color: orange;
   }
 
   a.navbar-item{
@@ -203,7 +218,6 @@ body {
     position: fixed;
     bottom: 0%;
     height: 4em;
-    background-color: green;
     width: 100%;
   }
 }

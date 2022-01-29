@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from "@angular/router";
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from "@angular/router";
 import { EventService } from './../../services/event.service';
 import { Event } from './../../../types';
 
@@ -25,20 +25,15 @@ export class ShowComponent implements OnInit {
   };
 
   constructor(route: ActivatedRoute, evtService: EventService, router: Router) {
-    //assign services to properties
     this.route = route;
     this.evtService = evtService;
     this.router = router;
   }
 
   ngOnInit(): void {
-    //get the URL Param
     this.route.params.subscribe((params) => {
-      // store the id in our properties
       this.id = params["id"];
-      // find post from our service with the to selected todo
       const selectedEvent = this.evtService.events.find((p) => p.id == params["id"]);
-      // if post exists assign it to post property
       if (selectedEvent) {
         this.event = selectedEvent;
       }

@@ -14,7 +14,6 @@ export class EventService {
     this.getEvents();
   }
 
-  // method to get todos
   async getEvents() {
     const response = await fetch(this.url);
     const data = await response.json();
@@ -22,7 +21,6 @@ export class EventService {
     return data;
   }
 
-  // method to create todos
   async createEvent(event: Event) {
     await fetch(this.url, {
       method: "post",
@@ -35,7 +33,6 @@ export class EventService {
     this.getEvents();
   }
 
-  // method to update todos
   async updateEvent(event: Event) {
     await fetch(this.url + event.id + "/", {
       method: "put",
@@ -48,7 +45,6 @@ export class EventService {
     this.getEvents();
   }
 
-  // method to delete todos
   async DeleteEvent(event: Event) {
     await fetch(this.url + event.id + "/", {
       method: "delete",

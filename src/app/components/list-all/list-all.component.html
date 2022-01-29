@@ -1,4 +1,4 @@
 <h3>Events</h3>
 <ul *ngFor="let event of eventService.events">
-  <li><a [routerLink]="'/events/' + event.id">{{event.title}}</a></li>
+  <li class="listItem"><a class="listAItem"[routerLink]="'/events/' + event.id">{{event.title}}</a></li>
 </ul>
