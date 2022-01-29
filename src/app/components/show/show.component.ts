@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from "@angular/router";
-import { EventService } from './../../services/event.service';
-import { Event } from './../../../types';
+import { EventService } from '../../services/event.service';
+import { Event } from '../../../types';
 
 @Component({
   selector: 'app-show',

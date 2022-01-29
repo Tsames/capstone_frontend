@@ -24,7 +24,7 @@
     height: 5em;
   }
 
-  a.navbar-item{
+  .navbar-item{
     font-size: 30px;
   }
 
@@ -72,7 +72,7 @@
     height: 5em;
   }
 
-  a.navbar-item{
+  .navbar-item{
     font-size: 30px;
   }
 
@@ -118,7 +118,7 @@
     height: 5em;
   }
 
-  a.navbar-item{
+  .navbar-item{
     font-size: 50px;
   }
 
@@ -160,7 +160,7 @@
     height: 5em;
   }
 
-  a.navbar-item{
+  .navbar-item{
     font-size: 50px;
   }
 
@@ -202,7 +202,7 @@
     height: 6em;
   }
 
-  a.navbar-item{
+  .navbar-item{
     font-size: 60px;
   }
 

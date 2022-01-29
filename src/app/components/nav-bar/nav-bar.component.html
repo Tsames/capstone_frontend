@@ -2,5 +2,15 @@
   <div class="container-fluid">
     <a [routerLink]="'/'" id="navIconHome" class="navbar-item" href="#"><i class="bi-house-fill"></i></a>
     <a [routerLink]="'/create'" id="navIconCreate" class="navbar-item" href="#"><i class="bi-plus-circle-fill"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi-search navbar-item"></i>
+    </button>
+    <div class="collapse" id="navbarSupportedContent">
+      <form class="d-flex">
+        <input class="" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
   </div>
 </nav>
