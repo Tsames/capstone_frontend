@@ -2,4 +2,3 @@
 <ul *ngFor="let event of eventService.events">
   <li><a [routerLink]="'/events/' + event.id">{{event.title}}</a></li>
 </ul>
-<button><a [routerLink]="'/create'">Create</a></button>

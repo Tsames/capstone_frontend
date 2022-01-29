@@ -10,9 +10,11 @@ import { Event } from './../../../types';
 })
 export class ShowComponent implements OnInit {
 
-  id: number | null = null; // variable for param id
-  route; // variable for route service
-  evtService; // variable for event service
+  //Service Variables
+  id: number | null = null;
+  route: ActivatedRoute;
+  evtService: EventService;
+  router: Router;
 
   event: Event = {
     title: "",
@@ -20,12 +22,13 @@ export class ShowComponent implements OnInit {
     location: "",
     range_begin: "",
     range_end:""
-  }; // variable to hold the selected Event
+  };
 
-  constructor(route: ActivatedRoute, evtService: EventService) {
+  constructor(route: ActivatedRoute, evtService: EventService, router: Router) {
     //assign services to properties
     this.route = route;
     this.evtService = evtService;
+    this.router = router;
   }
 
   ngOnInit(): void {
@@ -40,5 +43,10 @@ export class ShowComponent implements OnInit {
         this.event = selectedEvent;
       }
     });
+  }
+
+  async deleteEvent() {
+    await this.evtService.DeleteEvent(this.event);
+    this.router.navigate(["/"]);
   }
 }

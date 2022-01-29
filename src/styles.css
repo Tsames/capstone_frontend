@@ -1,1 +1,209 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+
+  div.main {
+    background-color: orange;
+    position: fixed;
+    top: 20%;
+    bottom: 15%;
+    left: 15%;
+    right: 15%;
+  }
+
+  nav#navbar {
+    height: 5em;
+    background-color: green;
+  }
+
+  a.navbar-item{
+    font-size: 30px;
+  }
+
+  a#navIconHome{
+    margin-left: 2em;
+  }
+
+  a#navIconCreate {
+    margin-right: 2em
+  }
+
+  div.footer {
+    position: fixed;
+    bottom: 0%;
+    height: 4em;
+    background-color: blue;
+    width: 100%;
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+body {
+    background-color: orange;
+  }
+
+  div.main {
+    background-color: red;
+    position: fixed;
+    top: 25%;
+    bottom: 15%;
+    left: 15%;
+    right: 15%;
+  }
+
+  nav#navbar {
+    height: 5em;
+    background-color: green;
+  }
+
+  a.navbar-item{
+    font-size: 30px;
+  }
+
+  a#navIconHome{
+    margin-left: 2em;
+  }
+
+  a#navIconCreate {
+    margin-right: 2em
+  }
+
+  div.footer {
+    position: fixed;
+    bottom: 0%;
+    height: 4em;
+    background-color: blue;
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+body {
+    background-color: yellow;
+  }
+
+  div.main {
+    background-color: red;
+    position: fixed;
+    top: 25%;
+    bottom: 15%;
+    left: 15%;
+    right: 15%;
+  }
+
+  nav#navbar {
+    height: 5em;
+    background-color: green;
+  }
+
+  a.navbar-item{
+    font-size: 50px;
+  }
+
+  a#navIconHome{
+    margin-left: 4em;
+  }
+
+  a#navIconCreate {
+    margin-right: 4em
+  }
+
+  div.footer {
+    position: fixed;
+    bottom: 0%;
+    height: 2em;
+    background-color: blue;
+    width: 100%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+body {
+    background-color: green;
+  }
+
+  div.main {
+    background-color: red;
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 15%;
+    right: 15%;
+  }
+
+  nav#navbar {
+    height: 5em;
+    background-color: orange;
+  }
+
+  a.navbar-item{
+    font-size: 50px;
+  }
+
+  a#navIconHome{
+    margin-left: 4em;
+  }
+
+  a#navIconCreate {
+    margin-right: 4em
+  }
+
+  div.footer {
+    position: fixed;
+    bottom: 0%;
+    height: 2em;
+    background-color: blue;
+    width: 100%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+body {
+    background-color: blue;
+  }
+
+  div.main {
+    background-color: red;
+    position: fixed;
+    top: 20%;
+    bottom: 20%;
+    left: 15%;
+    right: 15%;
+  }
+
+  nav#navbar {
+    height: 6em;
+    background-color: orange;
+  }
+
+  a.navbar-item{
+    font-size: 60px;
+  }
+
+  a#navIconHome{
+    margin-left: 7em;
+  }
+
+  a#navIconCreate {
+    margin-right: 7em
+  }
+
+  div.footer {
+    position: fixed;
+    bottom: 0%;
+    height: 4em;
+    background-color: green;
+    width: 100%;
+  }
+}

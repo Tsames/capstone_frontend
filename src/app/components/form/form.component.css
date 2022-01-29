@@ -1,0 +1,52 @@
+div.form-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(244, 241, 222,0.5);
+  border-color: rgba(224, 122, 95,1);
+  border-style: solid;
+  border-radius: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: rgba(224, 122, 95,1);
+}
+div.form-full {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+div.form-leftside {
+  margin-right: 1.5em
+}
+div.form-rightside{
+display: flex;
+flex-direction:column;
+justify-content: space-between;
+}
+div.input-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  text-align: left;
+  margin: 0.25em;
+  font-size: small;
+}
+button.submit-button {
+  border-radius: 0.25em;
+  border-style: none;
+  color: rgba(244, 241, 222,1);
+  background-color:rgba(224, 122, 95,1);
+}
+/* Input Text Color */
+input, select, textarea{
+  color: rgba(224, 122, 95,1);
+}
+/* Selected Text Color */
+textarea:focus, input:focus {
+  color: rgba(224, 122, 95,1);
+}

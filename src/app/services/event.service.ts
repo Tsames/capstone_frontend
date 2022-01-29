@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Event } from "../../types";
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -52,7 +53,5 @@ export class EventService {
     await fetch(this.url + event.id + "/", {
       method: "delete",
     });
-
-    return this.getEvents();
   }
 }

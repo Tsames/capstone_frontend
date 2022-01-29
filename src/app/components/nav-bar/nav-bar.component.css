@@ -1,0 +1,14 @@
+#navbar {
+/* background-color: rgba(255, 255, 255, 0.205);
+color: rgba(); */
+}
+div.navbar-items{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+a.navbar-item {
+  text-decoration: none;
+  color: black;
+}

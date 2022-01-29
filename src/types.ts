@@ -1,6 +1,6 @@
 export type Event = {
   id?: number;
-  title: string;
+  title?: string;
   description?: string;
   location?: string;
   range_begin?: string;

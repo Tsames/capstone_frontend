@@ -1,33 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CreateFormComponent } from './components/create-form/create-form.component';
-import { EditFormComponent } from './components/edit-form/edit-form.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ListAllComponent } from './components/list-all/list-all.component';
 import { ShowComponent } from './components/show/show.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateFormComponent,
-    EditFormComponent,
     NavBarComponent,
     FooterComponent,
     ListAllComponent,
-    ShowComponent
+    ShowComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot([
       { path: '', component: ListAllComponent },
-      { path: 'create', component: CreateFormComponent },
-      { path: 'edit/:id', component: EditFormComponent },
+      { path: 'create', component: FormComponent },
+      { path: 'edit/:id', component: FormComponent },
       { path: 'events/:id', component: ShowComponent },
     ])
   ],

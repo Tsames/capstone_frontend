@@ -4,7 +4,7 @@
   <h6>{{event.range_begin}} and {{event.range_end}}</h6>
   <p>{{event.description}}</p>
   <div>
-    <button><a [routerLink]="'/edit/' + event.id">Edit</a></button>
-    <button (click)="evtService.DeleteEvent(event)">Delete</button>
+    <button class="btn"><a [routerLink]="'/edit/' + event.id">Edit</a></button>
+    <button class="btn" (click)="evtService.DeleteEvent(event)">Delete</button>
   </div>
 </div>

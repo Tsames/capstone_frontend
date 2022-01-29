@@ -1,0 +1,29 @@
+<div class="form-component">
+  <div class="form-full">
+    <div class="form-leftside">
+      <div class="input-block">
+        <label for="title">Title</label>
+        <input id="title" class="form-component" type="text" placeholder="{{title}}" [(ngModel)]="title"/>
+      </div>
+      <div class="input-block">
+        <label for="description">Description</label>
+        <textarea id="description" class="form-component" type="text" placeholder="{{description}}" [(ngModel)]="description" rows="6" cols="30" wrap="soft"></textarea>
+      </div>
+    </div>
+    <div class="form-rightside">
+      <div class="input-block">
+        <label for="location">Location</label>
+        <input id="location" class="form-component" type="text" placeholder="{{location}}" [(ngModel)]="location" />
+      </div>
+      <div class="input-block">
+        <label for="rangeB">Earliest Availability</label>
+        <input id="rangeB"class="form-component" type="date" placeholder="{{range_begin}}" [(ngModel)]="range_begin" />
+      </div>
+      <div class="input-block">
+        <label for="rangeE">Latest Availability</label>
+        <input id="rangeE" class="form-component" type="date" placeholder="{{range_end}}" [(ngModel)]="range_end" />
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="handleSubmit()">{{ buttonText }}</button>
+</div>
